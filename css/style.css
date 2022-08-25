@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, menu{
+    list-style: none;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    background-color: lightslategray;
+}
+
+.container{
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+input{
+    display: inline-block;
+    line-height: 32px;
+    border: 0px;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+input[type="button"]{
+    cursor: pointer;
+}
+
+.new-todo_wrapper, .todo-list{
+    padding:20px 0;
+}
+
+.todo{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 10px;
+    background: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.done{
+    text-decoration: line-through;
+    background: rgb(238, 238, 238);
+    color: grey;
+}
+
+.todo-selection{
+    cursor:pointer
+}
