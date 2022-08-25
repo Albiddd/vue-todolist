@@ -40,9 +40,13 @@
 
     <!-- creare una lista di task completate utilizzando una proprietà computed
     sarà un array filtrato associato all'array già presente -->
-    <div class="containe">
+    <div class="container">
+        <h2>Completed Task</h2>
         <ul class="todo-list done-list">
-
+            <li v-for="doneTask in filteredList" class="completed">
+                <i class="fa-solid fa-check"></i>
+                {{doneTask.text}}
+            </li>
         </ul>
     </div>
 

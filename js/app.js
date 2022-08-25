@@ -23,10 +23,15 @@ const app = new Vue({
     data: {
         todos,
         classiTodos: 'todo',
-        newTodo: ''
+        newTodo: '',
+        newList: ''
     },
     computed:{
-
+        filteredList(){
+            return this.todos.filter((doneTask)=>{
+                return doneTask.done;
+            })
+        }
     },
     methods: {
         addTask(){

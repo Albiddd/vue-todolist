@@ -56,3 +56,13 @@ input[type="button"]{
 .todo-selection{
     cursor:pointer
 }
+
+.fa-check{
+    font-size: 1.15rem;
+    color: rgb(8, 184, 8);
+    vertical-align: center;
+}
+.completed{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
